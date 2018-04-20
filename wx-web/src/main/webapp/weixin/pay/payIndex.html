@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="keywords" content="0">
+    <title>微信商城</title>
+    <style type="text/css">
+
+.form-control {
+	/*display: block;*/
+	width: 80%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s
+		ease-in-out 0s;
+		margin-top: 20px;
+}
+
+.form-control:focus {
+	border-color: #66AFE9;
+	outline: 0px none;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px
+		rgba(102, 175, 233, 0.6);
+}
+
+.btn {
+	margin-top: 20px;
+	padding: 16px 22px;
+	margin-bottom: 0px;
+	background-color: #31B0D5;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+</style>
+	</head>
+	<body>
+		
+		<div style="width: 100%;text-align: center;">
+			<h4 style="color: red;">
+				<div style="text-align: left;">
+					<h3>TIP:交易金额</h3>
+				</div>
+				<div style="text-align: left;">
+					交易金额默认为人民币交易，接口中参数支付金额单位为【分】，参数值不能带小数。对账单中的交易金额单位为【元】。外币交易的支付金额精确到币种的最小单位，参数值不能带小数点。
+				</div>
+			</h4>
+		</div>
+			<form action="payConfig" method="post">
+				<div style="width: 100%;text-align: center;">
+					<input name="fee" value="" placeholder="请输入金额" class="form-control " />
+					<input name="openId" value="${openId}" type="hidden" class="form-control " />
+				</div>
+				<div style="width: 100%;text-align: center;">
+					<button type="submit" class="btn btn-default">提交支付参数</button>
+				</div>
+			</form>
+		
+	</body>
+</html>

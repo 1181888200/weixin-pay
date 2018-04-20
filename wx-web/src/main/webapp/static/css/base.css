@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Document */@charset=utf-8;/*css reset*/
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;/* Firefox */
+	-webkit-box-sizing:border-box;/* Safari */
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;/* For some Androids */
+}
+html {
+	-webkit-text-size-adjust:none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;/* For some Androids */
+}
+body {
+	font-family:"microsoft yahei";
+	color:#333;
+	background:#f5f5f5;
+	outline: none;
+}
+body, div, dl, dt, dd, ul, ol, li, p, h1, h2, h3, h4, h5, h6, pre, form, fieldset, th, td {
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6, input, select, textarea, option, button {
+	font-size:100%;
+	font-weight:normal;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img {
+	border:0
+}
+h1, h2, h3, h4, h5, h6, input, select, textarea, option, button {
+	font-size:100%
+}
+abbr {
+	border:0;
+}
+em, i {
+	font-style:normal;
+}
+ul, ol, li {
+	list-style:none;
+}
+ul{ background-color:#fff; }
+a {
+	text-decoration:none;
+	outline: none;
+	display:block;
+}
+a:hover { vertical-align:
+	outline: none;
+	text-decoration:none;
+}
+a, button, input, textarea, select {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background:none;
+	border:none;
+}/* 1.去除android a/button/input标签被点击时产生的边框 2.去除ios a标签被点击时产生的半透明灰色背景 */
+.clear {
+	clear:both;
+	height:0;
+}
+textarea {
+	resize:none;
+}/*禁止改变大小*//*解决firefox按钮文字难以垂直居中问题*/
+*html .clearfix {
+*zoom:1
+}/*IE7>*/
+*:first-child + html .clearfix {
+	zoom:1
+}
+.zoom {
+*zoom:1
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.box-flex {
+	display:-moz-box;/* Firefox */
+	display:-webkit-box;/* Safari and Chrome */
+	display:box;
+}
+	/*-------我的-------*/
+.my-face{ height:6.65rem; width:100%;display:-moz-box; display:-webkit-box; display:box; -ms-flex-align: center; -webkit-align-items: center; -webkit-box-align: center; align-items: center; background:url(../img/face-bg.jpg) center center no-repeat; background-size:cover; }
+.my-face .my-face-con{ height:5rem; width:5rem; margin:0 auto; position:relative;}
+.my-face .my-face-pic{ width:3.75rem; height:3.75rem; margin:0 auto; overflow:hidden; border:2px solid #fff; -moz-border-radius:100%;  -webkit-border-radius:100%; border-radius:100%;}
+.my-face p{ width:100%; text-align:center; color:#fff; font-size:0.7rem; position:absolute; bottom:0; left:0; }
+.personal-list ul { margin-bottom:0.25rem; border-top: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5; }
+.personal-list ul li { padding:0 5%; height:2.25rem;line-height:2.25rem;border-bottom: 1px solid #e5e5e5;background:url(../img/my-arrow.png) 95% center no-repeat;background-size:0.275rem 0.5rem; }
+.personal-list ul li:last-child {border-bottom:none;}
+.personal-list ul li a.my-icon-wddd{background-image:url(../img/my-icon-grzl.png);}
+.personal-list ul li a.my-icon-ddjd{background-image:url(../img/my-icon-grzl.png);}
+.personal-list ul li a.my-icon-grzl{background-image:url(../img/my-icon-grzl.png);}
+.personal-list ul li a.my-icon-yhq{background-image:url(../img/my-icon-grzl.png);}
+.personal-list ul li a.my-icon-wdjf{background-image:url(../img/my-icon-grzl.png);}
+.personal-list ul li a.my-icon-gsjj{background-image:url(../img/my-icon-grzl.png);}
+.personal-list ul li a.my-icon-bzzx{background-image:url(../img/my-icon-grzl.png);}
+.personal-list ul li a.my-icon-kfzx{background-image:url(../img/my-icon-grzl.png);}
+.personal-list ul li a {color:#181818;font-size:0.7rem;padding-left:2.2em; background-position:left center; background-repeat:no-repeat; background-size:auto 50%;}
+.personal-list ul li a .my-tel{ float:right; display:inline-block; margin-right:5%; color:#999999; font-size:0.7rem;}
+
+	
